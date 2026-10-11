@@ -1,0 +1,23 @@
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      args:
+        WITH_TORCH: "true"
+    image: gpubook/dev:latest
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace
+    shm_size: "8gb"
+    environment:
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true
