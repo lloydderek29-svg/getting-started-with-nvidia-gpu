@@ -1,0 +1,11 @@
+path: data/items
+train: images/train
+val: images/val
+names:
+  0: wallet
+  1: keys
+  2: phone
+  3: bottle
+
+# In this section you will have to creat the "images/train" and "images/val" files yourself, which you will be populating with the datasets.
+# Link to the datasets will be provided in the appendix of this book.
