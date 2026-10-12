@@ -1,0 +1,6 @@
+target_rps: 200
+max_accuracy_gap_pts: 0.5
+max_p99_ms_at_target: 40.0
+max_error_rate_at_target: 0.001
+min_capacity_rps: 300
+max_gpu_memory_gib: 6.0

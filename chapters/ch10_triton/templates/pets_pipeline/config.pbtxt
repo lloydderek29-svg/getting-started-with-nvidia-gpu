@@ -1,0 +1,33 @@
+name: "pets_pipeline"
+platform: "ensemble"
+max_batch_size: $max_batch
+input [
+  { name: "image" data_type: TYPE_STRING dims: [ 1 ] }
+]
+output [
+  { name: "top_probs" data_type: TYPE_FP32 dims: [ 5 ] },
+  { name: "top_labels" data_type: TYPE_STRING dims: [ 5 ] }
+]
+ensemble_scheduling {
+  step [
+    {
+      model_name: "preprocess"
+      model_version: -1
+      input_map { key: "image" value: "image" }
+      output_map { key: "pixels" value: "pixels" }
+    },
+    {
+      model_name: "pets"
+      model_version: -1
+      input_map { key: "input" value: "pixels" }
+      output_map { key: "logits" value: "logits" }
+    },
+    {
+      model_name: "postprocess"
+      model_version: -1
+      input_map { key: "logits" value: "logits" }
+      output_map { key: "top_probs" value: "top_probs" }
+      output_map { key: "top_labels" value: "top_labels" }
+    }
+  ]
+}

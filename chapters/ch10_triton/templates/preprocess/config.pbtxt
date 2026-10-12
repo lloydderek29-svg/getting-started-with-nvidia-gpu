@@ -1,0 +1,13 @@
+name: "postprocess"
+backend: "python"
+max_batch_size: $max_batch
+input [
+  { name: "logits" data_type: TYPE_FP32 dims: [ $classes ] }
+]
+output [
+  { name: "top_probs" data_type: TYPE_FP32 dims: [ 5 ] },
+  { name: "top_labels" data_type: TYPE_STRING dims: [ 5 ] }
+]
+instance_group [
+  { count: $instances kind: KIND_CPU }
+]

@@ -1,0 +1,27 @@
+services:
+  triton:
+    build:
+      context: .
+      dockerfile: Dockerfile.triton
+      args:
+        TRITON_TAG: ${TRITON_TAG:?set TRITON_TAG to YY.MM}
+    image: gpubook/triton:${TRITON_TAG}
+    command:
+      - tritonserver
+      - --model-repository=/models
+      - --model-control-mode=explicit
+      - --load-model=*
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+      - "8002:8002"
+    volumes:
+      - ../model_repository:/models
+    shm_size: "1gb"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
