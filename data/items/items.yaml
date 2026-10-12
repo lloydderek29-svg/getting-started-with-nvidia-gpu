@@ -1,3 +1,6 @@
+# When you have cloned this repo, refactor this project by adding this folder in your .gitignore.
+# Note: I repeate... do not commit this folder to your repo.
+
 path: data/items
 train: images/train
 val: images/val
@@ -9,3 +12,5 @@ names:
 
 # In this section you will have to creat the "images/train" and "images/val" files yourself, which you will be populating with the datasets.
 # Link to the datasets will be provided in the appendix of this book.
+# This File shouldn't be added here as its supposed to be include in .gitignore file.
+# The main purpose is to guide you.
