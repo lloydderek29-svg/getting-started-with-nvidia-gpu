@@ -1,0 +1,9 @@
+-c base.txt
+transformers>=4.46
+accelerate
+bitsandbytes
+huggingface_hub
+datasets
+safetensors
+sentencepiece
+packaging
