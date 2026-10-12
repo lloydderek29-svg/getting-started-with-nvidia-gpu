@@ -1,0 +1,10 @@
+model: yolo11s.pt
+data: data/items/items.yaml
+epochs: 100
+imgsz: 640
+batch: 16
+seed: 0
+workers: 8
+cache: ram
+name: items_s
+project: results/ch06/yolo
