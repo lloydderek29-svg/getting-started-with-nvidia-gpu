@@ -1,0 +1,8 @@
+max_accuracy_drop_pts: 0.30
+min_top1_agreement: 0.995
+max_p99_ms_b1: 6.0
+min_throughput_b32: 2500
+max_memory_gib: 2.0
+max_latency_drift: 1.10
+max_memory_growth_mib: 32
+max_batch_invariance_diff: 0.02
