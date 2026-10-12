@@ -1,0 +1,9 @@
+name: baseline
+epochs: 15
+batch_size: 256
+lr: 0.1
+num_workers: 4
+python chapters/ch05_training/python/train.py \
+    --config chapters/ch05_training/configs/baseline.yaml
+
+# Note: you can tweak this parameters.
