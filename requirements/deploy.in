@@ -1,0 +1,4 @@
+-c base.txt
+onnx
+onnxruntime-gpu
+tensorrt

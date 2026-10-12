@@ -1,0 +1,14 @@
+name: lighthouse_set
+model: stabilityai/stable-diffusion-xl-base-1.0
+scheduler: dpmpp_2m
+steps: 25
+guidance: 6.0
+width: 1024
+height: 1024
+seed: 1000
+images_per_prompt: 2
+negative_prompt: "blurry, low quality, watermark"
+offload: auto
+prompts:
+  - "a lighthouse at dawn, oil painting"
+  - "a lighthouse in a storm, dramatic photograph"

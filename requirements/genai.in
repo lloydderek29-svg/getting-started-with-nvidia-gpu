@@ -1,0 +1,7 @@
+-c base.txt
+diffusers
+transformers
+accelerate
+peft
+safetensors
+pillow
