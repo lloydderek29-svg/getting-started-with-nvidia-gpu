@@ -12,7 +12,7 @@ You do not need to read the whole repository to get value from it. Each chapter 
 
 ## If You Have Not Read the First Edition
 
-We encourage you to start with the first edition, *Getting Started with NVIDIA GPUs*. It covers the hardware vocabulary, the driver and toolkit installation, your first CUDA kernel, and the introductory training and inference labs that this book builds on. Where an idea from that book is worth a reminder, the chapters point you back to the relevant place. Keep it close while you work through this one.
+We encourage you to start with the first edition, [Getting Started with NVIDIA GPUs](https://www.amazon.com/Getting-Started-NVIDIA-GPUs-Acceleration-ebook/dp/B0DD3TSGNP/ref=sr_1_4?crid=33WNKSXDSB2TJ&dib=eyJ2IjoiMSJ9.Cu6W7SaigPFP8DjQZYMIolCUHveJrjweFXRMAMzXebvBXY_pjL4C_1Wm0BAUCPJYrpA2JtrmRHznw3OXupo-b9S3vR_Do-UUMr2zjEPt2z3kqz_njuJDRh7OdZl8YcQastw_T0pWamU54NXDDZhK4lJ7NKXQyXFavk66xLulhfWCdTufYLedbG7HHgaiIRnmb3R1eEQYs8j3pjjxrfrxIRZLbJfXU4IhCvhIvRGXsts.UXLhIo6hi9uvM6BajYLNY-rC_KYcLVbmoylYDEQVkSc&dib_tag=se&keywords=nvidia+gpus&qid=1792346270&s=books&sprefix=nvi%2Cstripbooks%2C1743&sr=1-4). It covers the hardware vocabulary, the driver and toolkit installation, your first CUDA kernel, and the introductory training and inference labs that this book builds on. Where an idea from that book is worth a reminder, the chapters point you back to the relevant place. Keep it close while you work through this one.
 
 ## Who This Is For
 
