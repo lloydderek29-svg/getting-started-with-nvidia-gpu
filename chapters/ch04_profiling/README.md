@@ -22,7 +22,7 @@ Shared code: `gpubook/bench.cuh`, `gpubook/bench.py`, and `gpubook/monitor.py`.
 
 ## Prerequisites
 
-The base setup from Chapter 2, plus Nsight Systems (`nsys`) and Nsight Compute (`ncu`) from the toolkit. The NVTX header `nvtx3/nvtx3.hpp` ships with the toolkit. The root `CMakeLists.txt` must include `add_subdirectory(chapters/ch04_profiling)`. If you add the `pipeline_demo` and `hist_bench` sources after the first build, include their names in `CH04_TOOLS`.
+The base setup from Chapter 2, plus Nsight Systems (`nsys`) and Nsight Compute (`ncu`) from the CUDA Toolkit. The NVTX header `nvtx3/nvtx3.hpp` also ships with the toolkit.
 
 ## Build
 

@@ -25,7 +25,6 @@ Shared headers: `gpubook/cuda_check.cuh`, `timer.cuh`, `device_buffer.cuh`, and 
 
 ## Build
 
-Make sure the `DEMOS` list in `CMakeLists.txt` names every demo.
 
 ```cmake
 set(DEMOS

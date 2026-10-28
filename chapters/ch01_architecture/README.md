@@ -44,7 +44,7 @@ cmake --preset release
 cmake --build --preset release -j
 ```
 
-All executables land in `build/release/bin/`. The root `CMakeLists.txt` must list this chapter with `add_subdirectory(chapters/ch01_architecture)`.
+All executables land in `build/release/bin/`. 
 
 ## Run
 

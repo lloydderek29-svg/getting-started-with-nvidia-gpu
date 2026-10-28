@@ -19,7 +19,7 @@ Related files elsewhere in the repository:
 | `common/python/gpubook/validate.py` | Python validator comparing versions across layers |
 | `common/python/gpubook/env.py` | Environment snapshot for saving beside results |
 | `docker/Dockerfile` and `docker/docker-compose.yml` | Development container |
-| `requirements/*.in` | Direct dependencies, compiled into `*.txt` lock files |
+| `requirements/*.txt` | Direct dependencies, compiled into `*.txt` lock files |
 
 ## Setup
 
