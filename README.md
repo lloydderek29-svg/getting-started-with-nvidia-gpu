@@ -78,6 +78,24 @@ The book's Summary, Conclusion, and Appendices A through H are reference materia
 
 You will need a computer with a recent NVIDIA graphics card, running Linux or Windows with the Linux subsystem. The book's introduction and Chapter 2 explain the full requirements and the setup in detail, and each chapter README repeats what that chapter needs. If something does not work, the troubleshooting section at the end of every chapter README is the first place to look, and Appendix D of the book collects the most common problems in one place.
 
+## Quick Start
+
+Clone the repository and install the base packages. Run every chapter command from the repository root.
+
+```bash
+git clone https://github.com/lloydderek29-svg/moving-on-with-nvidia-gpu.git
+cd moving-on-with-nvidia-gpu
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements/base.txt
+pip install -r requirements/dev.txt
+pip install -e .
+make doctor
+```
+
+The last command checks your driver, compiler, and Python setup and reports anything that is missing. Each chapter README lists the extra packages that chapter needs, such as the PyTorch stack for Chapters 5 to 10.
+
 ## A Note on Results
 
 Your numbers will not match the ones printed in the book. Speed depends on your card, your drivers, your cooling, and the versions of the software you use, and that is expected. What should carry over is the shape of the results: which approach is faster, which uses less memory, and roughly by how much. The code saves the details of your environment next to every measurement, so you can always tell which machine produced which number.
