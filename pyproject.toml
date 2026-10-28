@@ -16,3 +16,12 @@ gpubook-report = "gpubook.report:main"
 
 [tool.setuptools.packages.find]
 where = ["common/python"]
+
+[tool.pytest.ini_options]
+testpaths = ["chapters", "tests"]
+pythonpath = [
+  "chapters/ch06_vision/python",
+  "chapters/ch08_generative/python",
+  "chapters/ch10_triton/python",
+]
+markers = ["gpu: needs a CUDA GPU"]
