@@ -2,8 +2,8 @@
 # Note: I repeate... do not commit this folder to your repo.
 
 path: data/items
-train: images/train
-val: images/val
+train: data/images/train
+val: data/images/val
 names:
   0: wallet
   1: keys
