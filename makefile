@@ -15,6 +15,9 @@ test:
 bench:
 	bash scripts/run_benchmarks.sh
 
+bench-all:
+	bash scripts/run_benchmarks.sh --suite all
+
 lint:
 	pre-commit run --all-files
 
