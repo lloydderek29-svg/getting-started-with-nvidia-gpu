@@ -1,0 +1,6 @@
+-c base.txt
+pytest>=8.0
+pytest-cov
+cmake>=3.24
+ninja
+pre-commit
