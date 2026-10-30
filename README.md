@@ -1,4 +1,4 @@
-# Moving On with NVIDIA GPUs
+# Getting Started with NVIDIA GPUs
 
 ### Advanced Techniques for AI Acceleration with Python, C++, CUDA, and GPU Optimization
 
