@@ -83,7 +83,7 @@ You will need a computer with a recent NVIDIA graphics card, running Linux or Wi
 Clone the repository and install the base packages. Run every chapter command from the repository root.
 
 ```bash
-git clone https://github.com/lloydderek29-svg/moving-on-with-nvidia-gpu.git
+git clone https://github.com/lloydderek29-svg/getting-started-with-nvidia-gpu.git
 cd moving-on-with-nvidia-gpu
 python3 -m venv .venv
 source .venv/bin/activate
